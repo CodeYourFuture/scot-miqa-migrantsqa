@@ -28,6 +28,22 @@ const getAllQuestions = () => {
   });
 };
 
+const getAllTheQuestionsForUser = (userId) => {
+  return new Promise((resolve, reject) => {
+    pool.query(`select content, date_posted, id
+    from questions
+    where user_id = ${userId}
+		order by date_posted desc limit 10`, (error, result) => {
+        if (error) {
+          console.error(error)
+          reject(error);
+        } else {
+          resolve(result.rows);
+        }
+      });
+  });
+};
+
 const insertQuestions = (
   content,
   date_posted,
@@ -114,6 +130,7 @@ const insertAnswer = (
 
 module.exports = {
   getAllQuestions,
+  getAllTheQuestionsForUser,
   updateQuestions,
   insertQuestions,
   deleteQuestions,

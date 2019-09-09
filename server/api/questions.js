@@ -20,6 +20,19 @@ router.get("/", (req, res) => {
     });
 });
 
+router.get("/:userId", (req, res) => {
+  let newId = req.params.userId;
+  questionDb
+    .getAllTheQuestionsForUser(newId)
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      console.error(err);
+      res.sendStatus(500);
+    });
+});
+
 /**
  * Post Questions
  */

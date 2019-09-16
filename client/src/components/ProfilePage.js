@@ -3,13 +3,22 @@ import "semantic-ui-css/semantic.min.css";
 import { Message } from "semantic-ui-react";
 import { updatePassword } from "../api/updatePassword";
 import { Redirect } from "react-router-dom";
-import { Form, Grid, Header, Segment, Button } from "semantic-ui-react";
+import {
+  Form,
+  Grid,
+  Header,
+  Segment,
+  Button,
+  Divider
+} from "semantic-ui-react";
+import ProfileQuestions from "./ProfileQuestions.js";
 
 class ProfilePage extends Component {
   constructor(props) {
     super(props);
     this.state = {
       user: null,
+      questions: [],
       isPasswordChangedSuccessfully: false,
       isPasswordChangedFailure: false,
       isNewPasswordsNotMatching: false,
@@ -24,6 +33,17 @@ class ProfilePage extends Component {
       .then(data => {
         this.setState({
           user: data
+        });
+      })
+      .catch(error => {
+        console.log("error is ", error);
+      });
+
+    fetch(`http://localhost:4000/api/questions/${this.props.userId}`)
+      .then(res => res.json())
+      .then(data => {
+        this.setState({
+          questions: data
         });
       })
       .catch(error => {
@@ -166,8 +186,17 @@ class ProfilePage extends Component {
             </Segment>
           </Grid.Column>
         </Grid>
+        {userData ? (
+          <div id="questions">
+            <Divider horizontal />
+            <ProfileQuestions questions={this.state.questions} />
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     );
   }
 }
+
 export default ProfilePage;

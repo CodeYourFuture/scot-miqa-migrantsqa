@@ -153,3 +153,17 @@ I have update the pre populated `database query` located on `server -> services 
 - Saeed
 - Nab
 - Ahmed
+
+
+## Refactoring Session
+We will improve
+- Naming (files, functions etc..)
+- Single Responsibility (displaying list of questions, single question, diplsay list of answers AND display single answer)
+- Hide implementation details
+
+- Things we discussed:
+  - Refactoring: Read about it
+  - We will use this library for Testing: https://testing-library.com/docs/react-testing-library/cheatsheet
+  - Snapshot testing 
+  - State in parent https://reactjs.org/docs/lifting-state-up.html
+  - Unit vs Integration vs E2E

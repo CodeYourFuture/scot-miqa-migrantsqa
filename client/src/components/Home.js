@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Home.css";
 import Search from "./HomePageSearch";
 import { Container, Divider } from "semantic-ui-react";
-import QuestionsController from "./QuestionsController/QuestionController";
+import QuestionsController from "./QuestionsController/QuestionsContainer";
 const Home = () => {
   return (
     <Container>

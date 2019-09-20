@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container } from "semantic-ui-react";
-import DisplayQuestions from "../QuestionsCard";
+import QuestionsList from "../QuestionsList";
 import AddQuestion from "../AddQuestion";
 import { getQuestions } from "../../api/questions";
 import { getAnswers } from "../../api/answers";
@@ -42,7 +42,7 @@ export default class Controller extends Component {
     return (
       <Container>
         <AddQuestion pageReload={this.pageReload} />
-        <DisplayQuestions
+        <QuestionsList
           pageReload={this.pageReload}
           toggleAnswers={this.handleClick}
           questions={this.state.questions}

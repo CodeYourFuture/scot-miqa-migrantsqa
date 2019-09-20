@@ -1,0 +1,1572 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="ui container"
+      >
+        <div
+          class="ui container"
+        >
+          <form
+            class="ui form"
+          >
+            <div
+              class="ui stacked segment"
+            >
+              <div
+                class="required field"
+              >
+                <div
+                  class="ui fluid action input"
+                >
+                  <input
+                    minlength="12"
+                    name="content"
+                    placeholder="Please write your question here..."
+                    required=""
+                    type="text"
+                    value=""
+                  />
+                  <button
+                    class="ui icon button"
+                  >
+                    <i
+                      aria-hidden="true"
+                      class="circular add icon"
+                    />
+                  </button>
+                </div>
+              </div>
+              <div
+                aria-expanded="false"
+                class="ui fluid multiple search selection dropdown"
+                role="combobox"
+              >
+                <input
+                  aria-autocomplete="list"
+                  autocomplete="off"
+                  class="search"
+                  tabindex="0"
+                  type="text"
+                  value=""
+                />
+                <span
+                  class="sizer"
+                />
+                <div
+                  aria-atomic="true"
+                  aria-live="polite"
+                  class="default text"
+                  role="alert"
+                >
+                  Add Tags
+                </div>
+                <i
+                  aria-hidden="true"
+                  class="dropdown icon"
+                />
+                <div
+                  aria-multiselectable="true"
+                  class="menu transition"
+                  role="listbox"
+                >
+                  <div
+                    aria-checked="false"
+                    aria-selected="true"
+                    class="selected item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      English
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Arabic
+                    </span>
+                  </div>
+                  <div
+                    aria-checked="false"
+                    aria-selected="false"
+                    class="item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      Amharic
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div
+          class="ui container"
+        >
+          <div
+            class="ui fluid card"
+            data-testid="question"
+          >
+            <div
+              class="content"
+            >
+              <div
+                class="header"
+              >
+                <div
+                  class="accordion ui"
+                >
+                  <div
+                    class="title"
+                    id="card-0"
+                  >
+                    With a zambian passport, my father is British with a British
+                  </div>
+                  <div
+                    class="content"
+                  >
+                    <form
+                      class="ui form"
+                    >
+                      <div
+                        class="required field"
+                      >
+                        <textarea
+                          minlength="2"
+                          name="content"
+                          placeholder="Please write you answer here..."
+                          required=""
+                          rows="3"
+                          type="text"
+                        />
+                      </div>
+                      <div
+                        class="field"
+                      >
+                        <button
+                          class="ui button"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="right aligned meta"
+                style="font-size: 12px; font-style: italic;"
+              >
+                 
+                #
+                zambian
+              </div>
+              <div
+                class="right aligned meta"
+              >
+                Saturday, June 8, 2019, 12:00 AM
+              </div>
+              <div
+                class="right aligned meta"
+              >
+                 by 
+                user
+              </div>
+            </div>
+          </div>
+          <div
+            class="ui fluid card"
+            data-testid="question"
+          >
+            <div
+              class="content"
+            >
+              <div
+                class="header"
+              >
+                <div
+                  class="accordion ui"
+                >
+                  <div
+                    class="title"
+                    id="card-1"
+                  >
+                    هل صحيح انه ينعم بالحرية والامن والامان
+                    <div
+                      class="extra content"
+                    >
+                      <div
+                        class="ui two buttons"
+                      >
+                        <button
+                          class="ui green basic button"
+                        >
+                          Edit
+                        </button>
+                        <button
+                          class="ui red basic button"
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="content"
+                  >
+                    <form
+                      class="ui form"
+                    >
+                      <div
+                        class="required field"
+                      >
+                        <textarea
+                          minlength="2"
+                          name="content"
+                          placeholder="Please write you answer here..."
+                          required=""
+                          rows="3"
+                          type="text"
+                        />
+                      </div>
+                      <div
+                        class="field"
+                      >
+                        <button
+                          class="ui button"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="right aligned meta"
+                style="font-size: 12px; font-style: italic;"
+              >
+                 
+                #
+                حرية
+              </div>
+              <div
+                class="right aligned meta"
+              >
+                Sunday, April 21, 2019, 12:00 AM
+              </div>
+              <div
+                class="right aligned meta"
+              >
+                 by 
+                admin
+              </div>
+            </div>
+          </div>
+          <div
+            class="ui fluid card"
+            data-testid="question"
+          >
+            <div
+              class="content"
+            >
+              <div
+                class="header"
+              >
+                <div
+                  class="accordion ui"
+                >
+                  <div
+                    class="title"
+                    id="card-2"
+                  >
+                    It not might be immigration question. let me explain
+                  </div>
+                  <div
+                    class="content"
+                  >
+                    <form
+                      class="ui form"
+                    >
+                      <div
+                        class="required field"
+                      >
+                        <textarea
+                          minlength="2"
+                          name="content"
+                          placeholder="Please write you answer here..."
+                          required=""
+                          rows="3"
+                          type="text"
+                        />
+                      </div>
+                      <div
+                        class="field"
+                      >
+                        <button
+                          class="ui button"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="right aligned meta"
+                style="font-size: 12px; font-style: italic;"
+              >
+                 
+                #
+                immigrantion
+              </div>
+              <div
+                class="right aligned meta"
+              >
+                Thursday, April 12, 2018, 12:00 AM
+              </div>
+              <div
+                class="right aligned meta"
+              >
+                 by 
+                user
+              </div>
+            </div>
+          </div>
+          <div
+            class="ui fluid card"
+            data-testid="question"
+          >
+            <div
+              class="content"
+            >
+              <div
+                class="header"
+              >
+                <div
+                  class="accordion ui"
+                >
+                  <div
+                    class="title"
+                    id="card-3"
+                  >
+                    My wife and I are arriving in the UK in october and will
+                  </div>
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="ui small segment"
+                    >
+                      <div
+                        class="content"
+                      >
+                        <div
+                          class="header"
+                        >
+                          Answer text22 
+                        </div>
+                      </div>
+                      <div
+                        class="right aligned meta"
+                      >
+                         
+                        Thursday, April 12, 2018, 12:00 AM
+                      </div>
+                      <div
+                        class="right aligned meta"
+                      >
+                         
+                        by 
+                        admin
+                      </div>
+                    </div>
+                    <div
+                      class="ui small segment"
+                    >
+                      <div
+                        class="content"
+                      >
+                        <div
+                          class="header"
+                        >
+                          Answer text21 
+                        </div>
+                      </div>
+                      <div
+                        class="right aligned meta"
+                      >
+                         
+                        Sunday, July 27, 2014, 12:00 AM
+                      </div>
+                      <div
+                        class="right aligned meta"
+                      >
+                         
+                        by 
+                        reyam
+                      </div>
+                    </div>
+                    <form
+                      class="ui form"
+                    >
+                      <div
+                        class="required field"
+                      >
+                        <textarea
+                          minlength="2"
+                          name="content"
+                          placeholder="Please write you answer here..."
+                          required=""
+                          rows="3"
+                          type="text"
+                        />
+                      </div>
+                      <div
+                        class="field"
+                      >
+                        <button
+                          class="ui button"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="right aligned meta"
+                style="font-size: 12px; font-style: italic;"
+              >
+                 
+                #
+                wife
+              </div>
+              <div
+                class="right aligned meta"
+              >
+                Saturday, February 21, 2015, 12:00 AM
+              </div>
+              <div
+                class="right aligned meta"
+              >
+                 by 
+                user
+              </div>
+            </div>
+          </div>
+          <div
+            class="ui fluid card"
+            data-testid="question"
+          >
+            <div
+              class="content"
+            >
+              <div
+                class="header"
+              >
+                <div
+                  class="accordion ui"
+                >
+                  <div
+                    class="title"
+                    id="card-4"
+                  >
+                    I have asked a question here before about visa for an
+                    <div
+                      class="extra content"
+                    >
+                      <div
+                        class="ui two buttons"
+                      >
+                        <button
+                          class="ui green basic button"
+                        >
+                          Edit
+                        </button>
+                        <button
+                          class="ui red basic button"
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="ui small segment"
+                    >
+                      <div
+                        class="content"
+                      >
+                        <div
+                          class="header"
+                        >
+                          Answer text31 
+                        </div>
+                      </div>
+                      <div
+                        class="right aligned meta"
+                      >
+                         
+                        Saturday, June 8, 2019, 12:00 AM
+                      </div>
+                      <div
+                        class="right aligned meta"
+                      >
+                         
+                        by 
+                        user
+                      </div>
+                    </div>
+                    <div
+                      class="ui small segment"
+                    >
+                      <div
+                        class="content"
+                      >
+                        <div
+                          class="header"
+                        >
+                          Answer text32 
+                        </div>
+                      </div>
+                      <div
+                        class="right aligned meta"
+                      >
+                         
+                        Sunday, April 21, 2019, 12:00 AM
+                      </div>
+                      <div
+                        class="right aligned meta"
+                      >
+                         
+                        by 
+                        reyam
+                      </div>
+                    </div>
+                    <form
+                      class="ui form"
+                    >
+                      <div
+                        class="required field"
+                      >
+                        <textarea
+                          minlength="2"
+                          name="content"
+                          placeholder="Please write you answer here..."
+                          required=""
+                          rows="3"
+                          type="text"
+                        />
+                      </div>
+                      <div
+                        class="field"
+                      >
+                        <button
+                          class="ui button"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="right aligned meta"
+                style="font-size: 12px; font-style: italic;"
+              >
+                 
+                #
+                visa
+              </div>
+              <div
+                class="right aligned meta"
+              >
+                Sunday, July 27, 2014, 12:00 AM
+              </div>
+              <div
+                class="right aligned meta"
+              >
+                 by 
+                admin
+              </div>
+            </div>
+          </div>
+          <div
+            class="ui fluid card"
+            data-testid="question"
+          >
+            <div
+              class="content"
+            >
+              <div
+                class="header"
+              >
+                <div
+                  class="accordion ui"
+                >
+                  <div
+                    class="title"
+                    id="card-5"
+                  >
+                    I have been served court papers in regards to parental
+                    <div
+                      class="extra content"
+                    >
+                      <div
+                        class="ui two buttons"
+                      >
+                        <button
+                          class="ui green basic button"
+                        >
+                          Edit
+                        </button>
+                        <button
+                          class="ui red basic button"
+                        >
+                          Delete
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="ui small segment"
+                    >
+                      <div
+                        class="content"
+                      >
+                        <div
+                          class="header"
+                        >
+                          Answer text12 
+                        </div>
+                      </div>
+                      <div
+                        class="right aligned meta"
+                      >
+                         
+                        Saturday, February 21, 2015, 12:00 AM
+                      </div>
+                      <div
+                        class="right aligned meta"
+                      >
+                         
+                        by 
+                        user
+                      </div>
+                    </div>
+                    <div
+                      class="ui small segment"
+                    >
+                      <div
+                        class="content"
+                      >
+                        <div
+                          class="header"
+                        >
+                          Answer text11 
+                        </div>
+                      </div>
+                      <div
+                        class="right aligned meta"
+                      >
+                         
+                        Tuesday, December 10, 2013, 12:00 AM
+                      </div>
+                      <div
+                        class="right aligned meta"
+                      >
+                         
+                        by 
+                        admin
+                      </div>
+                    </div>
+                    <form
+                      class="ui form"
+                    >
+                      <div
+                        class="required field"
+                      >
+                        <textarea
+                          minlength="2"
+                          name="content"
+                          placeholder="Please write you answer here..."
+                          required=""
+                          rows="3"
+                          type="text"
+                        />
+                      </div>
+                      <div
+                        class="field"
+                      >
+                        <button
+                          class="ui button"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="right aligned meta"
+                style="font-size: 12px; font-style: italic;"
+              >
+                 
+                #
+                paper
+              </div>
+              <div
+                class="right aligned meta"
+              >
+                Tuesday, December 10, 2013, 12:00 AM
+              </div>
+              <div
+                class="right aligned meta"
+              >
+                 by 
+                admin
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="ui container"
+    >
+      <div
+        class="ui container"
+      >
+        <form
+          class="ui form"
+        >
+          <div
+            class="ui stacked segment"
+          >
+            <div
+              class="required field"
+            >
+              <div
+                class="ui fluid action input"
+              >
+                <input
+                  minlength="12"
+                  name="content"
+                  placeholder="Please write your question here..."
+                  required=""
+                  type="text"
+                  value=""
+                />
+                <button
+                  class="ui icon button"
+                >
+                  <i
+                    aria-hidden="true"
+                    class="circular add icon"
+                  />
+                </button>
+              </div>
+            </div>
+            <div
+              aria-expanded="false"
+              class="ui fluid multiple search selection dropdown"
+              role="combobox"
+            >
+              <input
+                aria-autocomplete="list"
+                autocomplete="off"
+                class="search"
+                tabindex="0"
+                type="text"
+                value=""
+              />
+              <span
+                class="sizer"
+              />
+              <div
+                aria-atomic="true"
+                aria-live="polite"
+                class="default text"
+                role="alert"
+              >
+                Add Tags
+              </div>
+              <i
+                aria-hidden="true"
+                class="dropdown icon"
+              />
+              <div
+                aria-multiselectable="true"
+                class="menu transition"
+                role="listbox"
+              >
+                <div
+                  aria-checked="false"
+                  aria-selected="true"
+                  class="selected item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    English
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Arabic
+                  </span>
+                </div>
+                <div
+                  aria-checked="false"
+                  aria-selected="false"
+                  class="item"
+                  role="option"
+                  style="pointer-events: all;"
+                >
+                  <span
+                    class="text"
+                  >
+                    Amharic
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div
+        class="ui container"
+      >
+        <div
+          class="ui fluid card"
+          data-testid="question"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="header"
+            >
+              <div
+                class="accordion ui"
+              >
+                <div
+                  class="title"
+                  id="card-0"
+                >
+                  With a zambian passport, my father is British with a British
+                </div>
+                <div
+                  class="content"
+                >
+                  <form
+                    class="ui form"
+                  >
+                    <div
+                      class="required field"
+                    >
+                      <textarea
+                        minlength="2"
+                        name="content"
+                        placeholder="Please write you answer here..."
+                        required=""
+                        rows="3"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      class="field"
+                    >
+                      <button
+                        class="ui button"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div
+              class="right aligned meta"
+              style="font-size: 12px; font-style: italic;"
+            >
+               
+              #
+              zambian
+            </div>
+            <div
+              class="right aligned meta"
+            >
+              Saturday, June 8, 2019, 12:00 AM
+            </div>
+            <div
+              class="right aligned meta"
+            >
+               by 
+              user
+            </div>
+          </div>
+        </div>
+        <div
+          class="ui fluid card"
+          data-testid="question"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="header"
+            >
+              <div
+                class="accordion ui"
+              >
+                <div
+                  class="title"
+                  id="card-1"
+                >
+                  هل صحيح انه ينعم بالحرية والامن والامان
+                  <div
+                    class="extra content"
+                  >
+                    <div
+                      class="ui two buttons"
+                    >
+                      <button
+                        class="ui green basic button"
+                      >
+                        Edit
+                      </button>
+                      <button
+                        class="ui red basic button"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                >
+                  <form
+                    class="ui form"
+                  >
+                    <div
+                      class="required field"
+                    >
+                      <textarea
+                        minlength="2"
+                        name="content"
+                        placeholder="Please write you answer here..."
+                        required=""
+                        rows="3"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      class="field"
+                    >
+                      <button
+                        class="ui button"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div
+              class="right aligned meta"
+              style="font-size: 12px; font-style: italic;"
+            >
+               
+              #
+              حرية
+            </div>
+            <div
+              class="right aligned meta"
+            >
+              Sunday, April 21, 2019, 12:00 AM
+            </div>
+            <div
+              class="right aligned meta"
+            >
+               by 
+              admin
+            </div>
+          </div>
+        </div>
+        <div
+          class="ui fluid card"
+          data-testid="question"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="header"
+            >
+              <div
+                class="accordion ui"
+              >
+                <div
+                  class="title"
+                  id="card-2"
+                >
+                  It not might be immigration question. let me explain
+                </div>
+                <div
+                  class="content"
+                >
+                  <form
+                    class="ui form"
+                  >
+                    <div
+                      class="required field"
+                    >
+                      <textarea
+                        minlength="2"
+                        name="content"
+                        placeholder="Please write you answer here..."
+                        required=""
+                        rows="3"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      class="field"
+                    >
+                      <button
+                        class="ui button"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div
+              class="right aligned meta"
+              style="font-size: 12px; font-style: italic;"
+            >
+               
+              #
+              immigrantion
+            </div>
+            <div
+              class="right aligned meta"
+            >
+              Thursday, April 12, 2018, 12:00 AM
+            </div>
+            <div
+              class="right aligned meta"
+            >
+               by 
+              user
+            </div>
+          </div>
+        </div>
+        <div
+          class="ui fluid card"
+          data-testid="question"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="header"
+            >
+              <div
+                class="accordion ui"
+              >
+                <div
+                  class="title"
+                  id="card-3"
+                >
+                  My wife and I are arriving in the UK in october and will
+                </div>
+                <div
+                  class="content"
+                >
+                  <div
+                    class="ui small segment"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <div
+                        class="header"
+                      >
+                        Answer text22 
+                      </div>
+                    </div>
+                    <div
+                      class="right aligned meta"
+                    >
+                       
+                      Thursday, April 12, 2018, 12:00 AM
+                    </div>
+                    <div
+                      class="right aligned meta"
+                    >
+                       
+                      by 
+                      admin
+                    </div>
+                  </div>
+                  <div
+                    class="ui small segment"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <div
+                        class="header"
+                      >
+                        Answer text21 
+                      </div>
+                    </div>
+                    <div
+                      class="right aligned meta"
+                    >
+                       
+                      Sunday, July 27, 2014, 12:00 AM
+                    </div>
+                    <div
+                      class="right aligned meta"
+                    >
+                       
+                      by 
+                      reyam
+                    </div>
+                  </div>
+                  <form
+                    class="ui form"
+                  >
+                    <div
+                      class="required field"
+                    >
+                      <textarea
+                        minlength="2"
+                        name="content"
+                        placeholder="Please write you answer here..."
+                        required=""
+                        rows="3"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      class="field"
+                    >
+                      <button
+                        class="ui button"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div
+              class="right aligned meta"
+              style="font-size: 12px; font-style: italic;"
+            >
+               
+              #
+              wife
+            </div>
+            <div
+              class="right aligned meta"
+            >
+              Saturday, February 21, 2015, 12:00 AM
+            </div>
+            <div
+              class="right aligned meta"
+            >
+               by 
+              user
+            </div>
+          </div>
+        </div>
+        <div
+          class="ui fluid card"
+          data-testid="question"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="header"
+            >
+              <div
+                class="accordion ui"
+              >
+                <div
+                  class="title"
+                  id="card-4"
+                >
+                  I have asked a question here before about visa for an
+                  <div
+                    class="extra content"
+                  >
+                    <div
+                      class="ui two buttons"
+                    >
+                      <button
+                        class="ui green basic button"
+                      >
+                        Edit
+                      </button>
+                      <button
+                        class="ui red basic button"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                >
+                  <div
+                    class="ui small segment"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <div
+                        class="header"
+                      >
+                        Answer text31 
+                      </div>
+                    </div>
+                    <div
+                      class="right aligned meta"
+                    >
+                       
+                      Saturday, June 8, 2019, 12:00 AM
+                    </div>
+                    <div
+                      class="right aligned meta"
+                    >
+                       
+                      by 
+                      user
+                    </div>
+                  </div>
+                  <div
+                    class="ui small segment"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <div
+                        class="header"
+                      >
+                        Answer text32 
+                      </div>
+                    </div>
+                    <div
+                      class="right aligned meta"
+                    >
+                       
+                      Sunday, April 21, 2019, 12:00 AM
+                    </div>
+                    <div
+                      class="right aligned meta"
+                    >
+                       
+                      by 
+                      reyam
+                    </div>
+                  </div>
+                  <form
+                    class="ui form"
+                  >
+                    <div
+                      class="required field"
+                    >
+                      <textarea
+                        minlength="2"
+                        name="content"
+                        placeholder="Please write you answer here..."
+                        required=""
+                        rows="3"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      class="field"
+                    >
+                      <button
+                        class="ui button"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div
+              class="right aligned meta"
+              style="font-size: 12px; font-style: italic;"
+            >
+               
+              #
+              visa
+            </div>
+            <div
+              class="right aligned meta"
+            >
+              Sunday, July 27, 2014, 12:00 AM
+            </div>
+            <div
+              class="right aligned meta"
+            >
+               by 
+              admin
+            </div>
+          </div>
+        </div>
+        <div
+          class="ui fluid card"
+          data-testid="question"
+        >
+          <div
+            class="content"
+          >
+            <div
+              class="header"
+            >
+              <div
+                class="accordion ui"
+              >
+                <div
+                  class="title"
+                  id="card-5"
+                >
+                  I have been served court papers in regards to parental
+                  <div
+                    class="extra content"
+                  >
+                    <div
+                      class="ui two buttons"
+                    >
+                      <button
+                        class="ui green basic button"
+                      >
+                        Edit
+                      </button>
+                      <button
+                        class="ui red basic button"
+                      >
+                        Delete
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="content"
+                >
+                  <div
+                    class="ui small segment"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <div
+                        class="header"
+                      >
+                        Answer text12 
+                      </div>
+                    </div>
+                    <div
+                      class="right aligned meta"
+                    >
+                       
+                      Saturday, February 21, 2015, 12:00 AM
+                    </div>
+                    <div
+                      class="right aligned meta"
+                    >
+                       
+                      by 
+                      user
+                    </div>
+                  </div>
+                  <div
+                    class="ui small segment"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <div
+                        class="header"
+                      >
+                        Answer text11 
+                      </div>
+                    </div>
+                    <div
+                      class="right aligned meta"
+                    >
+                       
+                      Tuesday, December 10, 2013, 12:00 AM
+                    </div>
+                    <div
+                      class="right aligned meta"
+                    >
+                       
+                      by 
+                      admin
+                    </div>
+                  </div>
+                  <form
+                    class="ui form"
+                  >
+                    <div
+                      class="required field"
+                    >
+                      <textarea
+                        minlength="2"
+                        name="content"
+                        placeholder="Please write you answer here..."
+                        required=""
+                        rows="3"
+                        type="text"
+                      />
+                    </div>
+                    <div
+                      class="field"
+                    >
+                      <button
+                        class="ui button"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div
+              class="right aligned meta"
+              style="font-size: 12px; font-style: italic;"
+            >
+               
+              #
+              paper
+            </div>
+            <div
+              class="right aligned meta"
+            >
+              Tuesday, December 10, 2013, 12:00 AM
+            </div>
+            <div
+              class="right aligned meta"
+            >
+               by 
+              admin
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

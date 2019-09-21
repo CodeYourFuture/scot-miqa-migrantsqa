@@ -218,13 +218,17 @@ class Questions extends Component {
                     fontStyle: "italic"
                   }}
                 >
-                  {tags.map(
-                    (tag, index) =>
-                      //This line will add a #followed by the tag and
-                      //keep adding spaces till we reach the end of the array.
+                  {!tags
+                    ? null
+                    : tags.map(
+                        (tag, index) =>
+                          //This line will add a #followed by the tag and
+                          //keep adding spaces till we reach the end of the array.
 
-                      `#${tag}${index === question.tags.length - 1 ? "" : ` `}`
-                  )}
+                          `#${tag}${
+                            index === question.tags.length - 1 ? "" : ` `
+                          }`
+                      )}
                 </Card.Meta>
                 <Card.Meta textAlign="right">
                   {formatingDate(question.date_posted)}

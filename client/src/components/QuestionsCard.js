@@ -35,7 +35,7 @@ class Questions extends Component {
       userId: 1,
       content: "",
       score: "",
-      tags: []
+      tags: ""
     };
   }
 
@@ -115,6 +115,7 @@ class Questions extends Component {
     return (
       <Container>
         {this.props.questions.map((question, index) => {
+          const tags = question.tags.flat(Infinity);
           return (
             <Card fluid key={question.id}>
               <Card.Content>
@@ -217,7 +218,7 @@ class Questions extends Component {
                     fontStyle: "italic"
                   }}
                 >
-                  {question.tags.map(
+                  {tags.map(
                     (tag, index) =>
                       //This line will add a #followed by the tag and
                       //keep adding spaces till we reach the end of the array.

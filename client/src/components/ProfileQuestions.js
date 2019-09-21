@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { List, Segment } from "semantic-ui-react";
+import formatingDate from "../util/formatingDate.js";
 
 class ProfileQuestions extends Component {
   constructor(props) {
@@ -16,7 +17,7 @@ class ProfileQuestions extends Component {
                 <List.Content>
                   <List.Header as="a">{question.content}</List.Header>
                   <List.Description as="a">
-                    {question.date_posted}
+                    {formatingDate(question.date_posted)}
                   </List.Description>
                 </List.Content>
               </List.Item>

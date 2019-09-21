@@ -11,21 +11,7 @@ import {
   Icon
 } from "semantic-ui-react";
 import { postAnswer } from "../api/questions";
-
-function formatingDate(date) {
-  const event = new Date(date);
-  const options = {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    hour: "2-digit",
-    minute: "2-digit"
-  };
-
-  return event.toLocaleDateString("en-GB", options);
-}
-
+import formatingDate from "../util/formatingDate.js";
 class Questions extends Component {
   constructor(props) {
     super(props);

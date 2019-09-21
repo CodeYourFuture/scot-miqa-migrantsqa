@@ -35,7 +35,7 @@ class Questions extends Component {
       userId: 1,
       content: "",
       score: "",
-      tags: ""
+      tags: []
     };
   }
 

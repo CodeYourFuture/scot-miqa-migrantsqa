@@ -1,8 +1,7 @@
 import React from "react";
 import { Button, Card, Form, TextArea, Accordion } from "semantic-ui-react";
-
 import { formatingDate } from "../util/formatingDate";
-import AnswerCard from "./AnswersCard";
+import AnswersList from "./AnswersList";
 
 const QuestionCard = props => {
   const { question, index } = props;
@@ -65,23 +64,14 @@ const QuestionCard = props => {
               ) : null}
             </Accordion.Title>
 
-            <Accordion.Content active={props.activeIndex === question.id}>
-              {props.answers.map(answer => {
-                return <AnswerCard question={question} answer={answer} />;
-              })}
-              <Form onSubmit={props.handleOnSubmitAnswer}>
-                <Form.TextArea
-                  placeholder="Please write you answer here..."
-                  required
-                  minLength={2}
-                  name="content"
-                  onChange={props.handleChange}
-                  value={props.content}
-                  type="text"
-                />
-                <Form.Button>Submit</Form.Button>
-              </Form>
-            </Accordion.Content>
+            <AnswersList
+              answers={props.answers}
+              question={question}
+              activeIndex={props.activeIndex}
+              handleOnSubmitAnswer={props.handleOnSubmitAnswer}
+              handleChange={props.handleChange}
+              content={props.content}
+            />
           </Accordion>
         </Card.Header>
         <Card.Meta
@@ -91,13 +81,14 @@ const QuestionCard = props => {
             fontStyle: "italic"
           }}
         >
-          {question.tags.map(
-            (tag, index) =>
-              //This line will add a #followed by the tag and
-              //keep adding spaces till we reach the end of the array.
+          {question.tags &&
+            question.tags.map(
+              (tag, index) =>
+                //This line will add a #followed by the tag and
+                //keep adding spaces till we reach the end of the array.
 
-              `#${tag}${index === question.tags.length - 1 ? "" : ` `}`
-          )}
+                `#${tag}${index === question.tags.length - 1 ? "" : ` `}`
+            )}
         </Card.Meta>
         <Card.Meta textAlign="right">
           {formatingDate(question.date_posted)}

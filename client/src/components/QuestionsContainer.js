@@ -18,7 +18,6 @@ export default class QuestionsContainer extends Component {
   }
 
   componentDidMount() {
-    console.log("I am mounting now....");
     this.pageReload();
   }
 
@@ -30,9 +29,7 @@ export default class QuestionsContainer extends Component {
   };
 
   pageReload = () => {
-    console.log("we are here pageReload");
     getQuestions().then(res => {
-      console.log("res", res);
       this.setState({
         questions: res,
         tags: this.props.tags,
@@ -48,7 +45,7 @@ export default class QuestionsContainer extends Component {
     if (this.props.tags.length) {
       return this.state.questions.filter(question => {
         const selectedTags = this.props.tags.filter(tag => {
-          return question.tags.includes(tag);
+          return question.tags && question.tags.includes(tag);
         });
         return selectedTags.length && selectedTags;
       });
@@ -58,7 +55,6 @@ export default class QuestionsContainer extends Component {
   };
 
   render() {
-    console.log("We are here", this.filterByTags());
     return this.state.IsLoading ? (
       <Loader />
     ) : (

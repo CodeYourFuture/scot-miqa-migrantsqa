@@ -20,6 +20,17 @@ router.get("/", (req, res) => {
     });
 });
 
+router.get("/questionTags", (req, res) => {
+  questionDb
+    .getQuestionsTags()
+    .then(data => {
+      res.send(data);
+    })
+    .catch(err => {
+      console.error(err);
+      res.sendStatus(500);
+    });
+});
 /**
  * Post Questions
  */
@@ -51,6 +62,22 @@ router.post("/update-question", async (req, res, next) => {
       res.send({
         success: true,
         message: "Question updated"
+      });
+    })
+    .catch(err => {
+      console.log(err);
+      next(err);
+    });
+});
+
+router.delete("/delete-question", async (req, res, next) => {
+  const { id } = req.body;
+  questionDb
+    .deleteQuestions(id)
+    .then(() => {
+      res.send({
+        success: true,
+        message: "Question delete"
       });
     })
     .catch(err => {

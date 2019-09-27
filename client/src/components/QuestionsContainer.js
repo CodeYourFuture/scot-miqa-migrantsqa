@@ -60,7 +60,6 @@ export default class QuestionsContainer extends Component {
     ) : (
       <Container>
         <AddQuestion pageReload={this.pageReload} />
-
         <QuestionsList
           pageReload={this.pageReload}
           toggleAnswers={this.handleClick}

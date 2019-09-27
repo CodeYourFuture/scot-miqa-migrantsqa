@@ -1,17 +1,28 @@
-import React from "react";
+import React, { Component } from "react";
 import "../styles/Home.css";
-import Search from "./HomePageSearch";
+import HomePageSearch from "./HomePageSearch";
 import { Container, Divider } from "semantic-ui-react";
-import QuestionsController from "./QuestionsController/QuestionController";
-const Home = () => {
-  return (
-    <Container>
-      <Divider horizontal />
-      <Search />
-      <Divider horizontal />
-      <QuestionsController />
-    </Container>
-  );
-};
+import QuestionsContainer from "./QuestionsContainer";
 
-export default Home;
+export default class Home extends Component {
+  state = {
+    tags: []
+  };
+
+  getFilteredTags = tags => {
+    this.setState({
+      tags
+    });
+  };
+
+  render() {
+    return (
+      <Container>
+        <Divider horizontal />
+        <HomePageSearch getFilteredTags={this.getFilteredTags} />
+        <Divider horizontal />
+        <QuestionsContainer tags={this.state.tags} userId={this.props.userId} />
+      </Container>
+    );
+  }
+}

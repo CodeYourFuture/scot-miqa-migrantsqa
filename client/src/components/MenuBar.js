@@ -2,7 +2,14 @@ import React, { Component } from "react";
 import { Menu, Image, Container, Dropdown } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { getUserById } from "../api/questions";
-import logo from '../../src/logo.png';
+import logo from "../logo.png";
+
+const trigger = img => (
+  <span>
+    <Image avatar src={img} />
+  </span>
+);
+
 export default class MenuBar extends Component {
   state = {
     activeItem:
@@ -45,86 +52,86 @@ export default class MenuBar extends Component {
   render() {
     const { activeItem } = this.state;
     return (
-      <Menu fixed='top' size="massive" inverted>
-      <Container>
-        <Menu.Item as='a' header>
-          <Image size='mini' src={logo} style={{ marginRight: '1.5em' }} />
-          MiQA
-        </Menu.Item>
-        <Menu.Item
-          name="home"
-          active={activeItem === "home"}
-          onClick={this.handleItemClick}
-          as={Link}
-          to="/"
-        />
-        <Menu.Item
-          name="about"
-          active={activeItem === "about"}
-          onClick={this.handleItemClick}
-          as={Link}
-          to="/about"
-        />
-        <Menu.Item
-          name="status"
-          active={activeItem === "status"}
-          onClick={this.handleItemClick}
-          as={Link}
-          to="/status"
-        />
+      <Menu fixed="top" size="massive" inverted>
+        <Container>
+          <Menu.Item as="a" header>
+            <Image size="mini" src={logo} style={{ marginRight: "1.5em" }} />
+            MiQA
+          </Menu.Item>
+          <Menu.Item
+            name="home"
+            active={activeItem === "home"}
+            onClick={this.handleItemClick}
+            as={Link}
+            to="/"
+          />
+          <Menu.Item
+            name="about"
+            active={activeItem === "about"}
+            onClick={this.handleItemClick}
+            as={Link}
+            to="/about"
+          />
+          <Menu.Item
+            name="status"
+            active={activeItem === "status"}
+            onClick={this.handleItemClick}
+            as={Link}
+            to="/status"
+          />
 
-{this.props.userId ? (
-          <Menu.Menu position="right">
-            <Menu.Item
-              name="profile"
-              active={activeItem === "profile"}
-              onClick={this.handleItemClick}
-              as={Link}
-              to="/profile"
-            />
-            <Menu.Item
-              name="logout"
-              active={activeItem === "logout"}
-              position="right"
-              onClick={this.handleLogout}
-            />
-            {this.props.userId ? (
-              <a class="header item">
-                <Image src={this.state.profilePicUrl} avatar />
-              </a>
-            ) : (
-              ""
-            )}
-          </Menu.Menu>
-        ) : (
-          <Menu.Menu position="right">
-            <Menu.Item
-              name="login"
-              active={activeItem === "login"}
-              position="right"
-              onClick={this.handleItemClick}
-              as={Link}
-              to="/login"
-            />
-            <Menu.Item
-              name="register"
-              position="right"
-              active={activeItem === "register"}
-              onClick={this.handleItemClick}
-              as={Link}
-              to="/register"
-            />
-          </Menu.Menu>
-        )}
-      </Container>
-    </Menu>
-    )
-    return (
-      <Menu pointing secondary size="massive" color="brown">
-        
-        
-
+          {this.props.userId ? (
+            <Menu.Menu position="right">
+              {this.props.userId ? (
+                <a class="header item">
+                  <Dropdown
+                    trigger={trigger(this.state.profilePicUrl)}
+                    options={[
+                      <Menu.Item
+                        name="profile"
+                        active={activeItem === "profile"}
+                        onClick={this.handleItemClick}
+                        as={Link}
+                        to="/profile"
+                      />,
+                      <Menu.Item
+                        name="logout"
+                        active={activeItem === "logout"}
+                        position="right"
+                        onClick={this.handleLogout}
+                      />
+                    ]}
+                    pointing="top right"
+                    icon={null}
+                  />
+                </a>
+              ) : (
+                ""
+              )}
+            </Menu.Menu>
+          ) : (
+            <Menu.Menu position="right">
+              <Menu.Item
+                name="login"
+                active={activeItem === "login"}
+                position="right"
+                onClick={this.handleItemClick}
+                as={Link}
+                to="/login"
+              />
+              <Menu.Item
+                name="register"
+                position="right"
+                active={activeItem === "register"}
+                onClick={this.handleItemClick}
+                as={Link}
+                to="/register"
+              />
+            </Menu.Menu>
+          )}
+        </Container>
       </Menu>
     );
+    return <Menu pointing secondary size="massive" color="brown"></Menu>;
   }
 }

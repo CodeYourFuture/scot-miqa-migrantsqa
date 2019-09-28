@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { Menu, Image } from "semantic-ui-react";
+import { Menu, Image, Container, Dropdown } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { getUserById } from "../api/questions";
-
+import logo from '../../src/logo.png';
 export default class MenuBar extends Component {
   state = {
     activeItem:
@@ -45,7 +45,12 @@ export default class MenuBar extends Component {
   render() {
     const { activeItem } = this.state;
     return (
-      <Menu pointing secondary size="massive" color="brown">
+      <Menu fixed='top' size="massive" inverted>
+      <Container>
+        <Menu.Item as='a' header>
+          <Image size='mini' src={logo} style={{ marginRight: '1.5em' }} />
+          MiQA
+        </Menu.Item>
         <Menu.Item
           name="home"
           active={activeItem === "home"}
@@ -68,7 +73,7 @@ export default class MenuBar extends Component {
           to="/status"
         />
 
-        {this.props.userId ? (
+{this.props.userId ? (
           <Menu.Menu position="right">
             <Menu.Item
               name="profile"
@@ -84,7 +89,9 @@ export default class MenuBar extends Component {
               onClick={this.handleLogout}
             />
             {this.props.userId ? (
-              <Image src={this.state.profilePicUrl} size="mini" avatar />
+              <a class="header item">
+                <Image src={this.state.profilePicUrl} avatar />
+              </a>
             ) : (
               ""
             )}
@@ -109,6 +116,14 @@ export default class MenuBar extends Component {
             />
           </Menu.Menu>
         )}
+      </Container>
+    </Menu>
+    )
+    return (
+      <Menu pointing secondary size="massive" color="brown">
+        
+        
+
       </Menu>
     );
   }

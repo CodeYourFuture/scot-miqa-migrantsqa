@@ -8,3 +8,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.question-style {
+  margin: 1.5em 0;
+  border: outset;
+  font-family: "-webkit-body";
+}
+.font-style {
+  font-family: "-webkit-body";
+}

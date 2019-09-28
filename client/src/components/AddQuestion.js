@@ -47,7 +47,7 @@ export default class AddQuestion extends Component {
     const { content, currentValues } = this.state;
     return (
       <Container>
-        <Form onSubmit={this.handleOnSubmit}>
+        <Form onSubmit={this.handleOnSubmit} style={{ marginBottom: "30px" }}>
           <Segment stacked>
             <Form.Input
               fluid

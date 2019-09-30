@@ -60,6 +60,13 @@ const QuestionCard = props => {
                       Delete
                     </Button>
                   </div>
+                  <Card.Meta textAlign="right">
+                    {formatingDate(question.date_posted)}
+                  </Card.Meta>
+                  <Card.Meta textAlign="right">
+                    {" "}
+                    by {question.username}
+                  </Card.Meta>
                 </Card.Content>
               ) : null}
             </Accordion.Title>
@@ -90,10 +97,6 @@ const QuestionCard = props => {
                 `#${tag}${index === question.tags.length - 1 ? "" : ` `}`
             )}
         </Card.Meta>
-        <Card.Meta textAlign="right">
-          {formatingDate(question.date_posted)}
-        </Card.Meta>
-        <Card.Meta textAlign="right"> by {question.username}</Card.Meta>
       </Card.Content>
     </Card>
   );

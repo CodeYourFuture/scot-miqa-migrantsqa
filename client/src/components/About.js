@@ -7,7 +7,7 @@ const About = () => {
        <Header as="h2">Q & A</Header>
       <div className="text-in-about">
         <p>
-          This forum is designed to help the newcomers to Glasgow with any
+           Mimi's forum is designed to help the newcomers to Glasgow with any
           questions they might have.
         </p>
         <p>Make the most of this fantastic webpage by signing up right now.</p>

@@ -64,7 +64,7 @@ export default class QuestionsContainer extends Component {
     return this.state.IsLoading ? (
       <Loader />
     ) : (
-      <Container>
+      <React.Fragment>
         <AddQuestion pageReload={this.pageReload} userId={this.props.userId} />
         <Divider />
         <QuestionsList
@@ -76,7 +76,7 @@ export default class QuestionsContainer extends Component {
           answers={this.state.answers}
           userId={this.props.userId}
         />
-      </Container>
+      </React.Fragment>
     );
   }
 }

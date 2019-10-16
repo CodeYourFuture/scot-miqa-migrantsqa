@@ -12,6 +12,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import ViewOneQuestion from "./components/ViewOneQuestion";
 import UserProfile from "./components/UserProfile";
+import { Container } from "semantic-ui-react";
 
 export default class App extends Component {
   state = {
@@ -32,44 +33,40 @@ export default class App extends Component {
 
   render() {
     return (
-      <>
-        <div className="top-content">
-          <Router>
-            <MenuBar userId={this.state.userId} />
-            <Route
-              path="/"
-              exact
-              render={props => <Home userId={this.state.userId} />}
-            />
-            <Route path="/about/" component={About} />
-            <Route
-              path="/change-password"
-              render={props => (
-                <ChangePasswordPage userId={this.state.userId} />
-              )}
-            />
-            <Route path="/register" component={Register} />
-            <Route
-              path="/login/"
-              render={props => (
-                <Login
-                  setUserId={this.setUserId}
-                  isLoggedIn={this.state.userId !== null}
-                />
-              )}
-            />
-            <Route
-              path="/profile"
-              render={props => <UserProfile userId={this.state.userId} />}
-            />
-            <Route
-              path="/question/:id"
-              render={props => <ViewOneQuestion userId={this.state.userId} />}
-            />
-          </Router>
-        </div>
+      <Container fluid>
+        <Router>
+          <MenuBar userId={this.state.userId} />
+          <Route
+            path="/"
+            exact
+            render={props => <Home userId={this.state.userId} />}
+          />
+          <Route path="/about/" component={About} />
+          <Route
+            path="/change-password"
+            render={props => <ChangePasswordPage userId={this.state.userId} />}
+          />
+          <Route path="/register" component={Register} />
+          <Route
+            path="/login/"
+            render={props => (
+              <Login
+                setUserId={this.setUserId}
+                isLoggedIn={this.state.userId !== null}
+              />
+            )}
+          />
+          <Route
+            path="/profile"
+            render={props => <UserProfile userId={this.state.userId} />}
+          />
+          <Route
+            path="/question/:id"
+            render={props => <ViewOneQuestion userId={this.state.userId} />}
+          />
+        </Router>
         <Footer />
-      </>
+      </Container>
     );
   }
 }

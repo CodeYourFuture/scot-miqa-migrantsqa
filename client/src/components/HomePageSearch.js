@@ -39,7 +39,7 @@ export default class HomePageSearch extends Component {
     }));
 
     return (
-      <Container>
+      <React.Fragment>
         <Dropdown
           inline
           text="Filter tags"
@@ -61,7 +61,7 @@ export default class HomePageSearch extends Component {
           button
           className="icon"
         />
-      </Container>
+      </React.Fragment>
     );
   }
 }

@@ -17,12 +17,12 @@ export default class Home extends Component {
 
   render() {
     return (
-      <Container>
+      <React.Fragment>
         <Divider horizontal />
         <HomePageSearch getFilteredTags={this.getFilteredTags} />
         <Divider horizontal />
         <QuestionsContainer tags={this.state.tags} userId={this.props.userId} />
-      </Container>
+      </React.Fragment>
     );
   }
 }

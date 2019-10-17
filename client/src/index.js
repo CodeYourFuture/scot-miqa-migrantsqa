@@ -33,9 +33,9 @@ export default class App extends Component {
 
   render() {
     return (
-      <Container fluid>
-        <Router>
-          <MenuBar userId={this.state.userId} />
+      <Router>
+        <MenuBar userId={this.state.userId} />
+        <Container fluid>
           <Route
             path="/"
             exact
@@ -64,9 +64,9 @@ export default class App extends Component {
             path="/question/:id"
             render={props => <ViewOneQuestion userId={this.state.userId} />}
           />
-        </Router>
+        </Container>
         <Footer />
-      </Container>
+      </Router>
     );
   }
 }

@@ -15,6 +15,7 @@ const AnswersList = props => {
     handleAcceptAnswerOnClick
     // content
   } = props;
+  console.log(userId);
   return (
     <Accordion.Content active={activeIndex === question.id}>
       {answers.map(answer => {
@@ -39,9 +40,9 @@ const AnswersList = props => {
           />
           <Form.Button>Submit</Form.Button>
         </Form>
-      ) : (
-        <PromptToAnswer />
-      )}
+      ) : null
+      // <PromptToAnswer />
+      }
     </Accordion.Content>
   );
 };
